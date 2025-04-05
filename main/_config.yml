@@ -4,12 +4,15 @@
 
 # Site
 title: SaiRaiX
-subtitle: 'meow'
-description: ''
+subtitle: ''
+description: 'Just a video editor meow-ving clips around and purr-fecting every cut! 🐱✂️🎥'
 keywords:
-author: John Doe
+author: Syed Asiful Islam
 language: en
-timezone: ''
+timezone: 'Asia/Dhaka'
+
+
+
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -102,3 +105,6 @@ theme: particlex
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+
+
