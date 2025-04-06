@@ -32,32 +32,30 @@ menu:
         name: id-card
         theme: solid
         link: /about
-    Archives:
-        name: box-archive
+    Video:
+        name: video
         theme: solid
-        link: /archives
-    Categories:
-        name: bookmark
-        theme: solid
-        link: /categories
-    Tags:
-        name: tags
-        theme: solid
-        link: /tags
-
+        link: /video
+    CV:
+        name: user
+        theme: solid 
+        link: /about/cv.pdf
 # Side info card
 card:
     enable: true
     description: |
-        Description
-        ...
+        Student and Video Editor
+
     iconLinks:
+        facebook:
+            name: facebook
+            theme: brand
+            link: https://www.facebook.com/the.black.diamond928
     friendLinks:
-        Argvchs: https://argvchs.github.io
 
 # Footer info
 footer:
-    since: 2022
+    since: 2025
     # Customize the server domain name ICP
     ICP:
         enable: false
@@ -76,10 +74,12 @@ polyfill:
 highlight:
     enable: true
     style: github
+    styleDark: github-dark
 
 # KaTeX math rendering
 math:
-    enable: false
+    enable: true
+
 
 # Image preview
 preview:
