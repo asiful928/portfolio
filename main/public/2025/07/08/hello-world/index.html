@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | SaiRaiX</title>
+    <title> | SaiRaiX</title>
     <meta name="author" content="Syed Asiful Islam" />
     <meta name="description" content="Just a video editor meow-ving clips around and purr-fecting every cut! 🐱✂️🎥" />
     <meta name="keywords" content="" />
@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="icon" href="/image/avatar.jpg" />
     <link rel="preconnect" href="https://s4.zstatic.net"/>
 <script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
@@ -46,6 +46,10 @@
 
 
 
+    
+    
+    
+
 
 <link rel="stylesheet" href="/css/main.css"/>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css"/>
@@ -59,8 +63,8 @@
             <div id="loading" v-show="loading">
                 <div id="loading-circle">
                     <h2>Hold Tight!</h2>
-                    <p>Loading too slowly, please turn on the cache. The browser is turned on by default</p>
-                    <img src="/images/loading.gif" />
+                    <p>Loading too slowly, please turn on the cache. The browser is turned on by default. :(</p>
+                    <img src="/image/loading.gif" />
                 </div>
             </div>
         </transition>
@@ -144,78 +148,33 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
-    
-    <div class="control-area">
-        <div class="control-text">
-            <el-link v-if=""
-                     :type="currentChoose === 'year' ? 'primary' : 'default'"
-                     @click="() => {currentChoose = 'year'; setItem('currentChoose', 'year')}">
-                Year
-            </el-link>
-            <el-link v-if=""
-                     :type="currentChoose === 'month' ? 'primary' : 'default'"
-                     @click="() => {currentChoose = 'month'; setItem('currentChoose', 'month')}">
-                Month
-            </el-link>
-            <el-link v-if=""
-                     :type="currentChoose === 'date' ? 'primary' : 'default'"
-                     @click="() => {currentChoose = 'date'; setItem('currentChoose', 'date')}">
-                Date
-            </el-link>
-        </div>
-        <div class="control-view">
-            <label class="date-picker-label" for="date-picker">
-Select date</label>
-            
-            
-            <el-date-picker :editable="false" :clearable="false" :type="currentChoose"
-                            id="date-picker"
-                            @change="assign('/archives/' + (currentChoose === 'year' ? format(chooseDate, 'YYYY') : currentChoose === 'month' ? format(chooseDate, 'YYYY/MM') : format(chooseDate, 'YYYY/MM/DD')))"
-                            :disabled-date="date => !['2025-4-6'].includes(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate())"
-                            v-model="chooseDate"></el-date-picker>
-            <el-link class="show-all" @click="assign(/archives/)">All
-            </el-link>
-        </div>
+            <div class="article">
+    <div>
+        <h1></h1>
     </div>
-    <div id="timeline-wrap" ref="timeline">
+    <div class="info">
+        
+            <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/7/8
+        </span>
         
         
-        
-        
-        
-        
-        
-            
-            
-            
-            <div class="timeline" data-title="">
-                <div class="timeline-tail"></div>
-                <div class="timeline-content">
-                    
-                    
-                    
-                    <a href="/2025/04/06/hello-world/">
-                        <h3></h3>
-                    </a>
-                    <div class="info">
-                        
-                        
-                    </div>
-                </div>
-            </div>
         
     </div>
-    <div class="page-current">
     
-    <span class="current">1</span>
+        <div class="content" v-pre>
+            
+        </div>
     
     
+        
+        
+        
+        
     
-    
-</div>
-
 </div>
 
             <footer id="footer">
@@ -250,6 +209,12 @@ Select date</label>
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>

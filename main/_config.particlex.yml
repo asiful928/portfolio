@@ -2,14 +2,14 @@
 # https://github.com/theme-particlex/hexo-theme-particlex
 
 # Avatar image
-avatar: /images/avatar.jpg
+avatar: /image/avatar.jpg
 
 # Home page background image
 background:
-    - /images/background.jpg
+    - /image/background.jpg
 
 # Loading image
-loading: /images/loading.gif
+loading: /image/loading.gif
 
 # Optional colors for category and tag
 colors:
