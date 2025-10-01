@@ -173,7 +173,7 @@ Select date</label>
             <el-date-picker :editable="false" :clearable="false" :type="currentChoose"
                             id="date-picker"
                             @change="assign('/archives/' + (currentChoose === 'year' ? format(chooseDate, 'YYYY') : currentChoose === 'month' ? format(chooseDate, 'YYYY/MM') : format(chooseDate, 'YYYY/MM/DD')))"
-                            :disabled-date="date => !['2025-7-8'].includes(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate())"
+                            :disabled-date="date => !['2025-10-1'].includes(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate())"
                             v-model="chooseDate"></el-date-picker>
             <el-link class="show-all" @click="assign(/archives/)">All
             </el-link>
@@ -196,7 +196,7 @@ Select date</label>
                     
                     
                     
-                    <a href="/2025/07/08/hello-world/">
+                    <a href="/2025/10/01/hello-world/">
                         <h3></h3>
                     </a>
                     <div class="info">

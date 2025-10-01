@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Edited Videos | SaiRaiX</title>
+    <title>SaiRaiX</title>
     <meta name="author" content="Syed Asiful Islam" />
     <meta name="description" content="Just a video editor meow-ving clips around and purr-fecting every cut! 🐱✂️🎥" />
     <meta name="keywords" content="" />
@@ -46,10 +46,8 @@
 
 
 
-    
-    
-    
 
+    <script src="/js/lib/home.js"></script>
 
 <link rel="stylesheet" href="/css/main.css"/>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css"/>
@@ -148,38 +146,105 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>Edited Videos</h1>
+            <div id="home-head">
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="/image/background.jpg"
+    ></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>SaiRaiX</h1>
+                <h3></h3>
+                <h5>Just a video editor meow-ving clips around and purr-fecting every cut! 🐱✂️🎥</h5>
+            </div>
+        </span>
     </div>
-    <div class="info">
+</div>
+<div
+    id="home-posts-wrap"
+    ref="homePostsWrap"
+    true
+>
+    <div id="home-posts">
         
-            <span class="date">
+
+<div class="post">
+    <a href="/2025/10/01/hello-world/">
+        <h2 class="post-title"></h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/9/30
+            2025/10/1
         </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            
+            
+        </div>
+    </div>
+    <div class="post-tags">
         
         
         
     </div>
-    
-        <div class="content" v-pre>
-            <h1 id="Documentary-Video"><a href="#Documentary-Video" class="headerlink" title="Documentary Video"></a>Documentary Video</h1><iframe  style="width: 100%; height: 600px;"
-src="https://www.youtube.com/embed/COOfhR_53XE?autoplay=1&mute=1">
-</iframe>
+    <a href="/2025/10/01/hello-world/" class="go-post">Dive deeper</a>
+</div>
 
-<h1 id="Transaction-Video"><a href="#Transaction-Video" class="headerlink" title="Transaction Video"></a>Transaction Video</h1><iframe  style="width: 100%; height: 600px;"
-src="https://www.youtube.com/embed/xz7ChX3zFDM?autoplay=1&mute=1">
-</iframe>
+
+        <div class="page-current">
+    
+    <span class="current">1</span>
+    
+    
+    
+    
+</div>
+
+    </div>
+    
+    <div id="home-card">
+        <div id="card-style">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="/image/avatar.jpg" alt="avatar" />
         </div>
-    
-    
+        <div class="name">Syed Asiful Islam</div>
+        <div class="description">
+            <p>Student and Video Editor</p>
+
+        </div>
+        
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                <a target="_blank" rel="noopener" href="https://www.facebook.com/the.black.diamond928">
+                    <i
+                        class="fa-brand fa-facebook fa-fw"
+                    ></i>
+                </a>
+            </span>
+            
+        </div>
         
         
-        
-        
+    </div>
+</div>
+
+    </div>
     
 </div>
 
@@ -215,12 +280,6 @@ src="https://www.youtube.com/embed/xz7ChX3zFDM?autoplay=1&mute=1">
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-
-
-
-
     
 </body>
 </html>
