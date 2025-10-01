@@ -48,10 +48,11 @@ card:
 
     iconLinks:
         facebook:
-            name: square-facebook
+            name: facebook-f
             theme: brand
             link: https://www.facebook.com/the.black.diamond928
     friendLinks:
+        
 
 # Footer info
 footer:

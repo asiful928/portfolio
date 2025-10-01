@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | SaiRaiX</title>
+    <title>My Journey as a Video Editor From Passion to Profession | SaiRaiX</title>
     <meta name="author" content="Syed Asiful Islam" />
     <meta name="description" content="Just a video editor meow-ving clips around and purr-fecting every cut! 🐱✂️🎥" />
     <meta name="keywords" content="" />
@@ -45,6 +45,10 @@
 
 
 
+
+    
+    
+    
 
 
 <link rel="stylesheet" href="/css/main.css"/>
@@ -144,97 +148,37 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
-    
-    <div class="control-area">
-        <div class="control-text">
-            <el-link v-if=""
-                     :type="currentChoose === 'year' ? 'primary' : 'default'"
-                     @click="() => {currentChoose = 'year'; setItem('currentChoose', 'year')}">
-                Year
-            </el-link>
-            <el-link v-if=""
-                     :type="currentChoose === 'month' ? 'primary' : 'default'"
-                     @click="() => {currentChoose = 'month'; setItem('currentChoose', 'month')}">
-                Month
-            </el-link>
-            <el-link v-if=""
-                     :type="currentChoose === 'date' ? 'primary' : 'default'"
-                     @click="() => {currentChoose = 'date'; setItem('currentChoose', 'date')}">
-                Date
-            </el-link>
-        </div>
-        <div class="control-view">
-            <label class="date-picker-label" for="date-picker">
-Select date</label>
-            
-            
-            <el-date-picker :editable="false" :clearable="false" :type="currentChoose"
-                            id="date-picker"
-                            @change="assign('/archives/' + (currentChoose === 'year' ? format(chooseDate, 'YYYY') : currentChoose === 'month' ? format(chooseDate, 'YYYY/MM') : format(chooseDate, 'YYYY/MM/DD')))"
-                            :disabled-date="date => !['2025-10-1','2025-2-1','2025-1-21','2024-9-11'].includes(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate())"
-                            v-model="chooseDate"></el-date-picker>
-            <el-link class="show-all" @click="assign(/archives/)">All
-            </el-link>
-        </div>
+            <div class="article">
+    <div>
+        <h1>My Journey as a Video Editor From Passion to Profession</h1>
     </div>
-    <div id="timeline-wrap" ref="timeline">
+    <div class="info">
+        
+            <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/2/1
+        </span>
         
         
-        
-        
-        
-        
-        
-            
-            
-            
-            <div class="timeline" data-title="thetopmistakespeoplemakewheneditingtheirownvideosandhowifixthem">
-                <div class="timeline-tail"></div>
-                <div class="timeline-content">
-                    
-                    
-                    
-                    <a href="/2025/10/01/The-Top-Mistakes-People-Make-When-Editing-Their-Own-Videos-and-How-I-Fix-Them/">
-                        <h3>The Top Mistakes People Make When Editing Their Own Videos and How I Fix Them</h3>
-                    </a>
-                    <div class="info">
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        
-            
-            
-            
-            <div class="timeline" data-title="myvideoeditingworkflowfromrawfootagetofinalmasterpiece">
-                <div class="timeline-tail"></div>
-                <div class="timeline-content">
-                    
-                    
-                    
-                    <a href="/2025/10/01/My-Video-Editing-Workflow-From-Raw-Footage-to-Final-Masterpiece/">
-                        <h3>My Video Editing Workflow From Raw Footage to Final Masterpiece</h3>
-                    </a>
-                    <div class="info">
-                        
-                        
-                    </div>
-                </div>
-            </div>
         
     </div>
-    <div class="page-current">
     
-    <span class="current">1</span>
-    
-    
-    
-    
-</div>
+        <div class="content" v-pre>
+            <p>When I first started video editing, it was not about clients or business. It was about curiosity. I wanted to experiment with music, visuals, and storytelling. What began as a hobby slowly turned into a passion.</p>
+<p>Over time, I explored different software like Premiere Pro, After Effects, Filmora, and CapCut. Each tool taught me something new about creativity and technical precision. What really kept me going was seeing how editing could transform ordinary clips into something extraordinary.</p>
+<p>Eventually, friends and clients started noticing my work. They trusted me to bring their stories to life, whether it was a personal project, a business promo, or a cinematic video.</p>
+<p>Today, I edit not just for passion but as a profession. I deliver polished, client ready projects that make an impact. My journey taught me one thing. Great editing is about more than just software. It is about storytelling, attention to detail, and dedication.</p>
 
+        </div>
+    
+    
+        
+        
+        
+        
+    
 </div>
 
             <footer id="footer">
@@ -269,6 +213,12 @@ Select date</label>
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>

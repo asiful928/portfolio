@@ -173,7 +173,7 @@ Select date</label>
             <el-date-picker :editable="false" :clearable="false" :type="currentChoose"
                             id="date-picker"
                             @change="assign('/archives/' + (currentChoose === 'year' ? format(chooseDate, 'YYYY') : currentChoose === 'month' ? format(chooseDate, 'YYYY/MM') : format(chooseDate, 'YYYY/MM/DD')))"
-                            :disabled-date="date => !['2025-10-1'].includes(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate())"
+                            :disabled-date="date => !['2025-10-1','2025-2-1','2025-1-21','2024-9-11'].includes(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate())"
                             v-model="chooseDate"></el-date-picker>
             <el-link class="show-all" @click="assign(/archives/)">All
             </el-link>
@@ -190,14 +190,71 @@ Select date</label>
             
             
             
-            <div class="timeline" data-title="">
+            <div class="timeline" data-title="thetopmistakespeoplemakewheneditingtheirownvideosandhowifixthem">
                 <div class="timeline-tail"></div>
                 <div class="timeline-content">
                     
                     
                     
-                    <a href="/2025/10/01/hello-world/">
-                        <h3></h3>
+                    <a href="/2025/10/01/The-Top-Mistakes-People-Make-When-Editing-Their-Own-Videos-and-How-I-Fix-Them/">
+                        <h3>The Top Mistakes People Make When Editing Their Own Videos and How I Fix Them</h3>
+                    </a>
+                    <div class="info">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        
+            
+            
+            
+            <div class="timeline" data-title="myvideoeditingworkflowfromrawfootagetofinalmasterpiece">
+                <div class="timeline-tail"></div>
+                <div class="timeline-content">
+                    
+                    
+                    
+                    <a href="/2025/10/01/My-Video-Editing-Workflow-From-Raw-Footage-to-Final-Masterpiece/">
+                        <h3>My Video Editing Workflow From Raw Footage to Final Masterpiece</h3>
+                    </a>
+                    <div class="info">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        
+            
+            
+            
+            <div class="timeline" data-title="myjourneyasavideoeditorfrompassiontoprofession">
+                <div class="timeline-tail"></div>
+                <div class="timeline-content">
+                    
+                    
+                    
+                    <a href="/2025/02/01/My-Journey-as-a-Video-Editor-From-Passion-to-Profession/">
+                        <h3>My Journey as a Video Editor From Passion to Profession</h3>
+                    </a>
+                    <div class="info">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        
+            
+            
+            
+            <div class="timeline" data-title="whybusinessesneedprofessionalvideoeditingin2025">
+                <div class="timeline-tail"></div>
+                <div class="timeline-content">
+                    
+                    
+                    
+                    <a href="/2025/01/21/Why-Businesses-Need-Professional-Video-Editing-in-2025/">
+                        <h3>Why Businesses Need Professional Video Editing in 2025</h3>
                     </a>
                     <div class="info">
                         
