@@ -48,7 +48,7 @@ card:
 
     iconLinks:
         facebook:
-            name: facebook
+            name: square-facebook
             theme: brand
             link: https://www.facebook.com/the.black.diamond928
     friendLinks:
