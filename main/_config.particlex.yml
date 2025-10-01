@@ -8,6 +8,7 @@ avatar: /image/avatar.jpg
 background:
     - /image/background.jpg
 
+
 # Loading image
 loading: /image/loading.gif
 
@@ -47,10 +48,31 @@ card:
         Student and Video Editor
 
     iconLinks:
+        e-mail:
+            name: envelope
+            theme: solid
+            link: mailto:asiful.freelancer@gmail.com
         facebook:
-            name: facebook-f
-            theme: brand
+            name: square-facebook
+            theme: brands
             link: https://www.facebook.com/the.black.diamond928
+        linkedin:
+            name: linkedin
+            theme: brands
+            link: https://www.linkedin.com/in/asiful928/
+        telegram:
+            name: telegram
+            theme: brands
+            link: https://t.me/MaoChan47
+        whatsapp:
+            name: whatsapp
+            theme: brands
+            link: https://wa.link/hgc3u5
+        youtube:
+            name: youtube
+            theme: brands
+            link: https://www.youtube.com/@SaiRaiX
+
     friendLinks:
         
 
