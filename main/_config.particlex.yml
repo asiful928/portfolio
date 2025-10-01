@@ -4,6 +4,8 @@
 # Avatar image
 avatar: /image/avatar.jpg
 
+theme: Night
+
 # Home page background image
 background:
     - /image/background.jpg
@@ -40,7 +42,7 @@ menu:
     CV:
         name: user
         theme: solid 
-        link: /about/cv.pdf
+        link: /about/CV.pdf
 # Side info card
 card:
     enable: true
@@ -74,11 +76,13 @@ card:
             link: https://www.youtube.com/@SaiRaiX
 
     friendLinks:
-        
+        iisbooknest:
+            name: iisbooknest
+            link: https://iisbooknest.kesug.com/
 
 # Footer info
 footer:
-    since: 2025
+    since: 2024
     # Customize the server domain name ICP
     ICP:
         enable: false
