@@ -1,6 +1,8 @@
 ---
 title: How Professional Video Editing Transforms Raw Footage into Powerful Stories
 date: 2024-09-11 09:56:45
+excerpt: >-
+  A short summary of the post that appears on index pages.
 tags:
 ---
 
